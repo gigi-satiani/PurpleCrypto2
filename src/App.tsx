@@ -1,12 +1,21 @@
 import "./App.css";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-      <Button colorScheme="blue">Button</Button>
-    </div>
+    <Grid
+      templateAreas={{
+        base: `"header" "main"`,
+      }}
+    >
+      <GridItem area="header">
+        <Header />
+      </GridItem>
+      <GridItem area="main" bg="blue">
+        Main
+      </GridItem>
+    </Grid>
   );
 }
 
