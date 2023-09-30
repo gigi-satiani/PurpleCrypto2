@@ -1,3 +1,31 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.backGroundImageStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transactionHeading {
+  width: fit-content;
+  background: #06206d;
+  border-radius: 30px;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  color: #fff;
+}
+
+.transactionBigText {
+  font-size: 60px;
+  color: #fff;
+  margin: 0 0 15px;
+}
+.transactionBigText span {
+  color: #007bff;
+}
