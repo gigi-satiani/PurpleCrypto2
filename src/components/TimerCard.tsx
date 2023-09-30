@@ -5,11 +5,10 @@ import centerImg from "../images/rollingStones/patara.png";
 import BSImage from "../images/rollingStones/BS.png";
 import BImage from "../images/rollingStones/bigB.png";
 import TokenImage from "../images/rollingStones/token.png";
-import backgroundImg from "../images/backGrounds/section1.5.png";
 
 const TimerCard = () => {
   return (
-    <Box className="backGroundImageStyle" bgImage={backgroundImg}>
+    <Box width={"50%"}>
       <figure style={{ position: "relative" }}>
         <Image
           src={backImg}
@@ -17,6 +16,7 @@ const TimerCard = () => {
           top={"0"}
           left={"0"}
           borderRadius={"50%"}
+          animation={"rotateRight 10s infinite linear"}
         />
         <Image
           src={midImg}
@@ -24,6 +24,7 @@ const TimerCard = () => {
           top={"60px"}
           left={"60px"}
           borderRadius={"50%"}
+          animation={"rotateLeft 10s infinite linear"}
         />
         <Image
           src={centerImg}
@@ -49,6 +50,7 @@ const TimerCard = () => {
           position={"absolute"}
           top={"30px"}
           left={"500px"}
+          animation={"bounce 4s infinite"}
         />
       </figure>
     </Box>

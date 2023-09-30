@@ -2,6 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .backGroundImageStyle {
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,4 +34,36 @@
 }
 .transactionBigText span {
   color: #007bff;
+}
+
+/*---- Bounce Animation -----*/
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/*---- Rotation Animation -----*/
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

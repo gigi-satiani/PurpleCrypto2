@@ -1,11 +1,11 @@
-import { Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import TheButton from "./TheButton";
 import icon from "../images/smallIcons/tableIconBlue.png";
 import "../App.css";
 
 const TransactionCard = () => {
   return (
-    <article>
+    <Box width={"28%"}>
       <div className="d-flex align-items-center transactionHeading">
         <Image src={icon} w={"10%"} margin={"5px"} />
         <p> Secure & Safe Crypto Currency </p>
@@ -24,7 +24,7 @@ const TransactionCard = () => {
         <TheButton Buttontext="How it Works" />
         <TheButton Buttontext="White Paper" />
       </div>
-    </article>
+    </Box>
   );
 };
 
