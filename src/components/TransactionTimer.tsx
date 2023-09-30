@@ -1,9 +1,11 @@
 import TransactionCard from "./TransactionCard";
+import TimerCard from "./TimerCard";
 
 const TransactionTimer = () => {
   return (
-    <div className="pt-5">
-      <TransactionCard />
+    <div className="">
+      {/* <TransactionCard /> */}
+      <TimerCard />
     </div>
   );
 };
