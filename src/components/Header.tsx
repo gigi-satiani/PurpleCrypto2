@@ -24,7 +24,7 @@ const HeaderUl = styled.ul`
 const DivStyle = {
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "space-around",
   width: "100%",
 };
 
@@ -44,6 +44,7 @@ const Header = () => {
       style={DivStyle}
       bgImage={backGround}
       className="backGroundImageStyle"
+      paddingBottom={"70px"}
     >
       <Box style={DivStyle}>
         <Image src={Logo} w={"15%"} marginRight={"100px"} />

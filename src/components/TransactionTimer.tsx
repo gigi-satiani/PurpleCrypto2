@@ -8,11 +8,17 @@ const TransactionTimer = () => {
   return (
     <Box
       backgroundImage={backgroundImg}
+      width={"100%"}
       className="backGroundImageStyle d-flex align-items-center
-                 justify-content-end w-100 gap-24"
+    justify-content-center"
     >
-      <TransactionCard />
-      <TimerCard />
+      <Box
+        className="d-flex align-items-center justify-content-center"
+        width={"85%"}
+      >
+        <TransactionCard />
+        <TimerCard />
+      </Box>
     </Box>
   );
 };

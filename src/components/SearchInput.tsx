@@ -2,7 +2,7 @@ import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 
 const SearchInput = () => {
   return (
-    <InputGroup w={"55%"}>
+    <InputGroup w={"85%"}>
       <Input
         borderRadius={20}
         placeholder="Search..."

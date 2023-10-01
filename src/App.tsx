@@ -5,12 +5,12 @@ import TransactionTimer from "./components/TransactionTimer";
 
 function App() {
   return (
-    <Grid templateAreas={{ base: `"header" "main"` }} w={"100vw"}>
+    <Grid templateAreas={{ base: `"header" "main"` }}>
       <Box>
         <GridItem area="header">
           <Header />
         </GridItem>
-        <GridItem area="main">
+        <GridItem area="main" width={"100%"}>
           <TransactionTimer />
         </GridItem>
       </Box>

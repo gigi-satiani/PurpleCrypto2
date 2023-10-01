@@ -8,10 +8,19 @@ import TokenImage from "../images/rollingStones/token.png";
 
 const TimerCard = () => {
   return (
-    <Box width={"50%"}>
-      <figure style={{ position: "relative" }}>
+    <Box display={"flex"} width={"100%"}>
+      <figure
+        style={{
+          position: "relative",
+          width: "960px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <Image
           src={backImg}
+          width={"60%"}
           position={"relative"}
           top={"0"}
           left={"0"}
@@ -20,36 +29,39 @@ const TimerCard = () => {
         />
         <Image
           src={midImg}
+          width={"50%"}
           position={"absolute"}
-          top={"60px"}
-          left={"60px"}
+          top={"45px"}
+          left={"240px"}
           borderRadius={"50%"}
           animation={"rotateLeft 10s infinite linear"}
         />
         <Image
           src={centerImg}
+          width={"38%"}
           position={"absolute"}
-          top={"107px"}
-          left={"107px"}
+          top={"100px"}
+          left={"300px"}
           borderRadius={"50%"}
         />
         <Image
           src={BSImage}
           position={"absolute"}
-          top={"100px"}
-          left={"30px"}
+          top={"40px"}
+          left={"240px"}
+          width={"10%"}
         />
         <Image
           src={BImage}
           position={"absolute"}
-          bottom={"100px"}
+          bottom={"0px"}
           left={"570px"}
         />
         <Image
           src={TokenImage}
           position={"absolute"}
           top={"30px"}
-          left={"500px"}
+          left={"570px"}
           animation={"bounce 4s infinite"}
         />
       </figure>
