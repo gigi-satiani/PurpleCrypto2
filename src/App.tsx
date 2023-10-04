@@ -2,6 +2,7 @@ import "./App.css";
 import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
 import Header from "./components/Header";
 import TransactionTimer from "./components/TransactionTimer";
+import TheButton from "./components/TheButton";
 
 function App() {
   return (

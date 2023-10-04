@@ -67,3 +67,55 @@
     transform: rotate(0deg);
   }
 }
+
+/*---- timer style -----*/
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 170px;
+  border-radius: 20px;
+  background-color: rgba(1, 53, 126, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  flex-wrap: wrap;
+}
+.countdown-title {
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 600;
+  color: #ff00c8;
+}
+.countdown-item {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.countdown-timers {
+  display: flex;
+}
+.spanDays {
+  background-color: rgb(55, 163, 254);
+  padding: 10px;
+  border-radius: 8px;
+}
+.spanHours {
+  background-color: rgb(71, 219, 167);
+  padding: 10px;
+  border-radius: 8px;
+}
+.spanMinutes {
+  background-color: rgb(255, 193, 7);
+  padding: 10px;
+  border-radius: 8px;
+}
+.spanSeconds {
+  background-color: rgb(226, 48, 204);
+  padding: 10px;
+  border-radius: 8px;
+}

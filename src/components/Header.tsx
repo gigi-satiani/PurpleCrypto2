@@ -15,6 +15,7 @@ const HeaderUl = styled.ul`
   font-size: 20px;
   font-weight: bold;
   margin-right: 30px;
+  color: #fff;
   :hover {
     color: #007bff;
     transition: all 0.3s ease-in-out 0s;
@@ -55,7 +56,15 @@ const Header = () => {
             </li>
           ))}
         </HeaderUl>
-        <TheButton Buttontext="Get Token" />
+        <TheButton
+          Buttontext="Get Token"
+          style={{
+            color: "white",
+            fontSize: "18px",
+          }}
+          onClick={function (): void {}}
+          children={undefined}
+        />
       </Box>
       <SearchInput />
     </HStack>

@@ -1,37 +1,54 @@
-import { Button } from "@chakra-ui/react";
+import { CSSProperties, ReactNode } from "react";
+import styled from "styled-components";
+
+const ButtonStyle = styled.button`
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
+
+  position: relative;
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 40px;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(45deg, #002bff, #7a00ff, #ff00c8);
+
+    scale: 0 1.5;
+    transition: scale ease-in-out 0.5s;
+    transform-origin: right;
+  }
+  &:hover::after {
+    scale: 1 1;
+    transform-origin: left;
+  }
+`;
 
 interface Props {
   Buttontext: string;
+  style: CSSProperties;
+  onClick: () => void;
+  children: ReactNode;
 }
 
-const TheButton = ({ Buttontext }: Props) => {
+const TheButton: React.FC<Props> = ({
+  Buttontext,
+  style,
+  onClick,
+  children,
+}) => {
   return (
-    <Button
-      position="relative"
-      overflow="hidden"
-      isolation="isolate"
-      _after={{
-        position: "absolute",
-        content: `""`,
-        background: "transparent",
-        inset: "0",
-        zIndex: "-1",
-        // transformOrigin: "right",
-        scale: 0,
-        transition: "all 0.5s ease-in-out 0s",
-      }}
-      _hover={{
-        _after: {
-          //   transformOrigin: "left",
-          transition: "all 0.5s ease-in-out 0s",
-          backgroundColor: "#007bff",
-          color: "white",
-          scale: 2,
-        },
-      }}
-    >
-      {Buttontext}
-    </Button>
+    <div>
+      <ButtonStyle style={style} onClick={onClick}>
+        {Buttontext}
+      </ButtonStyle>
+    </div>
   );
 };
 

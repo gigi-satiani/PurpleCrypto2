@@ -4,6 +4,7 @@ const SearchInput = () => {
   return (
     <InputGroup w={"85%"}>
       <Input
+        id="headerSearch"
         borderRadius={20}
         placeholder="Search..."
         variant="filled"

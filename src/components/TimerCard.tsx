@@ -5,10 +5,20 @@ import centerImg from "../images/rollingStones/patara.png";
 import BSImage from "../images/rollingStones/BS.png";
 import BImage from "../images/rollingStones/bigB.png";
 import TokenImage from "../images/rollingStones/token.png";
+import Timer from "../components/Timer";
+import "../App.css";
 
 const TimerCard = () => {
   return (
-    <Box display={"flex"} width={"100%"}>
+    <Box
+      display={"flex"}
+      width={"100%"}
+      flexDirection={"column"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      textAlign={"center"}
+      position={"relative"}
+    >
       <figure
         style={{
           position: "relative",
@@ -65,6 +75,7 @@ const TimerCard = () => {
           animation={"bounce 4s infinite"}
         />
       </figure>
+      <Timer />
     </Box>
   );
 };
