@@ -1,7 +1,7 @@
 import TransactionCard from "./TransactionCard";
 import TimerCard from "./TimerCard";
 import { Box, useMediaQuery } from "@chakra-ui/react";
-import backgroundImg from "../images/backGrounds/section2.png";
+import backgroundImg from "../images/backGrounds/emptyBG.jpg";
 import "../App.css";
 
 const TransactionTimer = () => {
@@ -14,9 +14,10 @@ const TransactionTimer = () => {
   return (
     <Box
       backgroundImage={backgroundImg}
+      backgroundPosition={"center center"}
       width={"100%"}
       className="backGroundImageStyle d-flex
-    justify-content-center"
+                justify-content-center "
     >
       <Box
         className="d-flex align-items-center justify-content-center"

@@ -1,8 +1,8 @@
 import "./App.css";
-import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 import Header from "./components/Header";
 import TransactionTimer from "./components/TransactionTimer";
-import TheButton from "./components/TheButton";
+import CryptoCards from "./components/CryptoCards";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         </GridItem>
         <GridItem area="main" width={"100%"}>
           <TransactionTimer />
+          <CryptoCards />
         </GridItem>
       </Box>
     </Grid>

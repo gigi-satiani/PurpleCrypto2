@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Logo from "../images/header/HeaderLogo.png";
 import TheButton from "./TheButton";
 import SearchInput from "./SearchInput";
-import backGround from "../images/backGrounds/section1.jpg";
+import backGround from "../images/backGrounds/emptyBG.jpg";
 
 const HeaderUl = styled.ul`
   list-style: none;
@@ -41,9 +41,10 @@ const Header = () => {
   return (
     <HStack
       p={2}
-      flexDirection={"column"}
       style={DivStyle}
+      flexDirection={"column"}
       bgImage={backGround}
+      backgroundPosition={"center center"}
       className="backGroundImageStyle"
       paddingBottom={"70px"}
     >
